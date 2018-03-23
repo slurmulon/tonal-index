@@ -1,4 +1,5 @@
 const { all } = require('../src/notes')
+const equal = require('deep-equal')
 const test = require('tape')
 
 test('all', t => {
@@ -21,9 +22,6 @@ test('all', t => {
       'Bb',
       'B']
 
-  t.equal(result.length, expected.length)
-
-  expected.forEach(exp => t.true(result.includes(exp)))
-
+  t.true(equal(result, expected))
   t.end()
 })
