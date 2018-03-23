@@ -1,11 +1,11 @@
-const { Scale, Chord } = require('tonal')
 const notes = require('./notes').all
 const flatten = require('flatten')
 const memoize = require('memoizee')
 
 // pre-warmed / pre-memoized
 module.exports = () => {
-  const every = module.exports.every
+  const { Scale, Chord } = require('tonal')
+  const { every } = module.exports
 
   [Scale, Chord].map(every)
 
