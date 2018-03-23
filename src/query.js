@@ -1,17 +1,11 @@
 import { every } from './list'
 
-export class Query {
+export const query = element => {
+  const collection = {
+    all: () => every(element),
 
-  constructor (element) {
-    this.element = element
+    by: (key, value) => collection.all().filter(el => el[key] === value)
   }
 
-  all () {
-    return every(this.element)
-  }
-
-  by (key, val) {
-    return this.all().filter(el => el[key] === value)
-  }
-
+  return collection
 }
