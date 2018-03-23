@@ -1,10 +1,12 @@
 const { all } = require('../src/chords')
+const fixture = require('./fixtures/chords')
+const equal = require('deep-equal')
 const test = require('tape')
 
 test('all', t => {
-  const result = all().length
-  const expected = 1853
+  const result = all()
+  const expected = fixture
 
-  t.equal(result, expected)
+  t.true(equal(result, expected))
   t.end()
 })

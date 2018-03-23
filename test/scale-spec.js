@@ -1,10 +1,12 @@
 const { all } = require('../src/scales')
+const fixture = require('./fixtures/scales')
+const equal = require('deep-equal')
 const test = require('tape')
 
 test('all', t => {
-  const result = all().length
-  const expected = 1530
+  const result = all()
+  const expected = fixture
 
-  t.equal(result, expected)
+  t.true(equal(result, expected))
   t.end()
 })
