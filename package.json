@@ -1,0 +1,32 @@
+{
+  "name": "tonal-universe",
+  "version": "1.0.0",
+  "description": "Music library providing iterable collections of every note, scale and chord in the (NodeJS) universe",
+  "main": "src/index.js",
+  "dependencies": {
+    "flatten": "^1.0.2",
+    "memoizee": "^0.4.12",
+    "tonal": "^1.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slurmulon/tonal-universe.git"
+  },
+  "keywords": [
+    "music",
+    "theory",
+    "library",
+    "collection",
+    "index"
+  ],
+  "author": "slurmulon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slurmulon/tonal-universe/issues"
+  },
+  "homepage": "https://github.com/slurmulon/tonal-universe#readme"
+}
