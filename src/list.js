@@ -23,3 +23,5 @@ module.exports.every = memoize(element => flatten(element
     }))
   )
 ))
+
+// TODO: stream, generator
