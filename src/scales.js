@@ -1,4 +1,4 @@
-const { Scale } = require('tonal')
-const { every } = require('./list')
+import { Scale } from 'tonal'
+import { query } from './query'
 
-exports.all = () => every(Scale)
+export default query(Scale)
