@@ -27,13 +27,11 @@ const lazyMusic = require('tonal-universe')
 ## Usage
 
 ```js
-const notes = require('./src/notes').all
-const scales = require('./src/scales').all
-const chords = require('./src/scales').all
+const { notes, scales, chord } = require('tonal-universe')
 
-notes()  // [ 'C', 'C#', 'Db', 'D', 'D#', 'Eb', ...]
-scales() // 1530 results
-chords() // 1853 results
+notes.all()  // [ 'C', 'C#', 'Db', 'D', 'D#', 'Eb', ...]
+scales.all() // 1530 results
+chords.all() // 1853 results
 ```
 
 ## Future
