@@ -13,15 +13,15 @@
 then, either:
 
 ```js
-// pre-warmed / pre-cached module
-const warmMusic = require('tonal-universe')()
+// warm / pre-cached module
+const music = require('tonal-universe')()
 ```
 
 or
 
 ```js
 // lazy module
-const lazyMusic = require('tonal-universe')
+const music = require('tonal-universe')
 ```
 
 ## Usage
