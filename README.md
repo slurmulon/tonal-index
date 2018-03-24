@@ -43,6 +43,8 @@ scales.all() // 1530 results
 chords.all() // 1853 results
 ```
 
+You can find the full list of chords and scales in [`test/fixtures/*`](https://github.com/slurmulon/tonal-index/tree/master/test/fixtures)
+
 ## API
 
 ### `note`
