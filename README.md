@@ -1,33 +1,33 @@
-# tonal-universe
+# tonal-index
 
-> :books: Music theory library providing iterable collections of every note, scale and chord in the (NodeJS) universe 
+> :books: Music theory library providing iterable collections of every note, scale and chord in the (NodeJS) index 
 
 ---
 
-`tonal-universe` integrates [`tonal`](https://npmjs.com/tonal) in order to generate and centralize every musical note, scale and chord.
+`tonal-index` integrates [`tonal`](https://npmjs.com/tonal) in order to generate and centralize every musical note, scale and chord.
 
 ## Install
 
-`npm install --save slurmulon/tonal-universe`
+`npm install --save slurmulon/tonal-index`
 
 then, either:
 
 ```js
 // warm / pre-cached module
-const music = require('tonal-universe')()
+const music = require('tonal-index')()
 ```
 
 or
 
 ```js
 // lazy module
-const music = require('tonal-universe')
+const music = require('tonal-index')
 ```
 
 ## Usage
 
 ```js
-const { notes, scales, chord } = require('tonal-universe')
+const { notes, scales, chord } = require('tonal-index')
 
 notes.all()  // [ 'C', 'C#', 'Db', 'D', 'D#', 'Eb', ...]
 scales.all() // 1530 results
