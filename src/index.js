@@ -1,4 +1,4 @@
-const package = {
+const lib = {
   notes  : require('./notes'),
   scales : require('./scales'),
   chords : require('./chords')
@@ -8,8 +8,8 @@ const package = {
 module.exports = () => {
   require('./list')
 
-  return package
+  return lib
 }
 
 // lazy
-Object.assign(module.exports, package)
+Object.assign(module.exports, lib)
