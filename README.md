@@ -4,7 +4,9 @@
 
 ---
 
-`tonal-index` uses [`tonal`](https://npmjs.com/tonal) to generate and centralize every musical note, scale and chord
+If you have ever needed to iterate through every possible note, scale, or chord in your music applications then `tonal-index` is the answer.
+
+`tonal-index` uses [`tonal`](https://npmjs.com/tonal) to dynamically generate and aggregate each collection.
 
 ## Install
 
