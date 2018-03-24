@@ -76,18 +76,19 @@ You can find the full list of chords and scales in [`test/fixtures/*`](https://g
 
 ### `scale` and `chord`
 - Type: `object`
-- `type`:
-  - Type: `string`
-  - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
-  - Examples: `"+add#9"`, `"m7"`, `"major"`
-- `root`:
-  - Type: `string`
-  - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
-  - Example: `"C"`
-- `notes`:
-  - Type: `Array<string>`
-  - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
-  - Example: `["C", "E", "G#", "D#"]`
+- Properties:
+  - `type`:
+    - Type: `string`
+    - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
+    - Examples: `"+add#9"`, `"m7"`, `"major"`
+  - `root`:
+    - Type: `string`
+    - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
+    - Example: `"C"`
+  - `notes`:
+    - Type: `Array<string>`
+    - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
+    - Example: `["C", "E", "G#", "D#"]`
 
 
 
