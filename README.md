@@ -8,6 +8,13 @@ If you have ever needed to iterate through every possible note, scale, or chord 
 
 `tonal-index` uses [`tonal`](https://npmjs.com/tonal) to dynamically generate and aggregate each collection.
 
+## Modes
+
+`tonal-index` module may be loaded in either warm or lazy mode.
+
+- **Warm**: Pre-generates and caches all of the possible combinations
+- **Lazy**: Defers generation until the collections are actually needed
+
 ## Install
 
 `npm install --save slurmulon/tonal-index`
