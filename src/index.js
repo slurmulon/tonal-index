@@ -5,11 +5,7 @@ const lib = {
 }
 
 // warm / pre-cached
-module.exports = () => {
-  require('./list')()
-
-  return lib
-}
+module.exports = () => require('./list')() && lib
 
 // lazy
 Object.assign(module.exports, lib)
