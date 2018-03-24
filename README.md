@@ -17,7 +17,7 @@ Because `tonal-index` generates relatively large sets of data it may be loaded i
 
 ## Install
 
-`npm install --save slurmulon/tonal-index`
+`npm install --save tonal-index`
 
 then, either:
 
