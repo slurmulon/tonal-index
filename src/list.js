@@ -12,6 +12,7 @@ module.exports = () => {
   return { every }
 }
 
+// lazy
 module.exports.every = memoize(element => flatten(element
   .names()
   .map(name =>
