@@ -79,7 +79,7 @@ You can find the full list of chords and scales in [`test/fixtures/*`](https://g
 - `type`:
   - Type: `string`
   - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
-  - Examples: `"+add#9"`, `m7`, `major`
+  - Examples: `"+add#9"`, `"m7"`, `"major"`
 - `root`:
   - Type: `string`
   - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
