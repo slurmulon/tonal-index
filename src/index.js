@@ -6,7 +6,7 @@ const lib = {
 
 // warm / pre-cached
 module.exports = () => {
-  require('./list')
+  require('./list')()
 
   return lib
 }
