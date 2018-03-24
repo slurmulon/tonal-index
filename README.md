@@ -70,6 +70,8 @@ chords.all() // 1853 results
 
 - [ ] Optionally group by root note
 - [ ] Configurable octaves
+- [ ] Chord voicings
+- [ ] Chord inversions
 - [ ] Streamed collection
 - [ ] Generator collection
 
