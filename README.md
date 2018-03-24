@@ -33,7 +33,12 @@ or
 const music = require('tonal-index')
 ```
 
-## Usage
+## API
+
+### `all`
+
+- **Types**: `notes`, `scales`, and `chords`
+- **Returns**: Every possible combination of `notes`, `scales`, or `chords`
 
 ```js
 const { notes, scales, chord } = require('tonal-index')
@@ -43,9 +48,27 @@ scales.all() // 1530 results
 chords.all() // 1853 results
 ```
 
+### `by`
+
+- **Types**: `scales`, `chords`
+- **Params**:
+  * `key` (`string`): Either `'name'` (also interpreted as "kind")  `'root'` (i.e. the root `note` of the `scale` or `chord`)
+- **Returns**: Entire collection filtered by entries matching a `key` and `value`
+
+```js
+const { scales, chords } = require('tonal-index')
+
+const majors = scales.by('type', 'major')
+
+const min7 = chords.by('type', 'm7')
+
+```
+
+### Output
+
 You can find the full list of chords and scales in [`test/fixtures/*`](https://github.com/slurmulon/tonal-index/tree/master/test/fixtures)
 
-## API
+## Types
 
 ### `note`
 - Type: `string`
@@ -53,10 +76,10 @@ You can find the full list of chords and scales in [`test/fixtures/*`](https://g
 
 ### `scale` and `chord`
 - Type: `object`
-- `name`:
+- `type`:
   - Type: `string`
   - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
-  - Example: `"+add#9"`
+  - Examples: `"+add#9"`, `m7`, `major`
 - `root`:
   - Type: `string`
   - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
