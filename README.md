@@ -53,6 +53,7 @@ chords.all() // 1853 results
 - **Types**: `scales`, `chords`
 - **Params**:
   * `key` (`string`): Either `'type'` or `'root'` (i.e. the root `note` of the `scale` or `chord`)
+  * `value` (`string)`: The value to compare all other values against
 - **Returns**: Entire collection filtered by entries matching a `key` and `value`
 
 ```js
