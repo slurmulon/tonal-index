@@ -15,11 +15,11 @@ module.exports = () => {
 // lazy
 module.exports.every = memoize(element => flatten(element
   .names()
-  .map(name =>
+  .map(type =>
     notes().map(note => ({
-      name,
+      type,
       root: note,
-      notes: element.notes(`${note} ${name}`)
+      notes: element.notes(`${note} ${type}`)
     }))
   )
 ))
