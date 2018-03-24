@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slurmulon/tonal-universe.git"
+    "url": "git+https://github.com/slurmulon/tonal-index.git"
   },
   "keywords": [
     "music",
@@ -30,7 +30,7 @@
   "author": "slurmulon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/slurmulon/tonal-universe/issues"
+    "url": "https://github.com/slurmulon/tonal-index/issues"
   },
-  "homepage": "https://github.com/slurmulon/tonal-universe#readme"
+  "homepage": "https://github.com/slurmulon/tonal-index#readme"
 }
