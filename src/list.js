@@ -1,6 +1,6 @@
-const notes = require('./notes').all
-const flatten = require('flatten')
-const memoize = require('memoizee')
+import { all as notes } from './notes'
+import flatten from 'flatten'
+import memoize from 'memoizee'
 
 // pre-warmed / pre-memoized
 module.exports = () => {
@@ -12,7 +12,6 @@ module.exports = () => {
   return { every }
 }
 
-// lazy
 module.exports.every = memoize(element => flatten(element
   .names()
   .map(name =>

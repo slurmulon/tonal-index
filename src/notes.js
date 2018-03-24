@@ -1,10 +1,12 @@
-const { Note } = require('tonal')
-const memoize = require('memoizee')
+import { Note } from 'tonal'
+import memoize from 'memoizee'
 
-exports.all = memoize(() => {
+export const all = memoize(() => {
   const whole  = Note.names()
   const sharps = Note.names('#')
   const flats  = Note.names('b')
 
   return [...new Set([...whole, ...sharps, ...flats])]
 })
+
+export default all
