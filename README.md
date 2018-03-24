@@ -1,6 +1,6 @@
 # tonal-index
 
-> :books: Music theory library providing iterable collections of every note, scale and chord in the (NodeJS) index 
+> :books: Music theory library providing iterable collections of every possible note, scale and chord
 
 ---
 
