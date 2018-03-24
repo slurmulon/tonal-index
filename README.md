@@ -10,7 +10,7 @@ If you have ever needed to iterate through every possible note, scale, or chord 
 
 ## Modes
 
-`tonal-index` module may be loaded in either warm or lazy mode.
+`tonal-index` may be loaded in either warm or lazy mode.
 
 - **Warm**: Pre-generates and caches all of the possible combinations
 - **Lazy**: Defers generation until the collections are actually needed
