@@ -7,7 +7,7 @@ module.exports = () => {
   const { Scale, Chord } = require('tonal')
   const { every } = module.exports
 
-  const warmed = [Scale, Chord].map(every)
+  void [Scale, Chord].map(every)
 
   return { every }
 }
