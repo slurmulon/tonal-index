@@ -1,4 +1,4 @@
-const { all } = require('../dist/notes')
+const { all } = require('../src/notes')
 const equal = require('deep-equal')
 const test = require('tape')
 

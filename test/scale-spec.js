@@ -1,4 +1,4 @@
-const { all } = require('../dist/scales')
+const { all } = require('../src/scales')
 const fixture = require('./fixtures/scales')
 const equal = require('deep-equal')
 const test = require('tape')

@@ -1,4 +1,4 @@
-const { all } = require('../dist/chords')
+const { all } = require('../src/chords')
 const fixture = require('./fixtures/chords')
 const equal = require('deep-equal')
 const test = require('tape')

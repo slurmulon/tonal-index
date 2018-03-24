@@ -1,4 +1,4 @@
-const list = require('../dist/list')
+const list = require('../src/list')
 const sinon = require('sinon')
 const test = require('tape')
 
