@@ -4,7 +4,7 @@
 
 ---
 
-`tonal-index` integrates [`tonal`](https://npmjs.com/tonal) in order to generate and centralize every musical note, scale and chord.
+`tonal-index` uses [`tonal`](https://npmjs.com/tonal) to generate and centralize every musical note, scale and chord
 
 ## Install
 
@@ -33,6 +33,29 @@ notes.all()  // [ 'C', 'C#', 'Db', 'D', 'D#', 'Eb', ...]
 scales.all() // 1530 results
 chords.all() // 1853 results
 ```
+
+## API
+
+### `note`
+- Type: `string`
+- Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
+
+### `scale` and `chord`
+- Type: `object`
+- `name`:
+  - Type: `string`
+  - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
+  - Example: `"+add#9"`
+- `root`:
+  - Type: `string`
+  - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
+  - Example: `"C"`
+- `notes`:
+  - Type: `Array<string>`
+  - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
+  - Example: `["C", "E", "G#", "D#"]`
+
+
 
 ## Future
 
