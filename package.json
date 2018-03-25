@@ -1,6 +1,6 @@
 {
   "name": "tonal-index",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Music library providing iterable collections of every possible note, scale and chord",
   "main": "src/index.js",
   "scripts": {
