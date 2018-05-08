@@ -100,7 +100,7 @@ You can find the full list of chords and scales in [`test/fixtures/*`](https://g
 - [ ] Chord voicings
 - [ ] Chord inversions
 - [ ] Streamed collection
-- [ ] Generator collection
+- [x] Generator collection
 
 ## License
 

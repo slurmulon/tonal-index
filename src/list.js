@@ -24,4 +24,16 @@ module.exports.every = memoize(element => flatten(element
   )
 ))
 
-// TODO: stream, generator
+module.exports.generate = element => function* () {
+  for (const type of element.names()) {
+    for (const note of notes()) {
+      yield {
+        type,
+        root: note,
+        notes: element.notes(`${note} ${type}`)
+      }
+    }
+  }
+}
+
+// TODO: stream
