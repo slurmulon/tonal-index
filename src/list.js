@@ -13,17 +13,9 @@ module.exports = () => {
 }
 
 // lazy
-module.exports.every = memoize(element => flatten(element
-  .names()
-  .map(type =>
-    notes().map(note => ({
-      type,
-      root: note,
-      notes: element.notes(`${note} ${type}`)
-    }))
-  )
-))
+module.exports.every = memoize(element => [...module.exports.generate(element)()])
 
+// iterative
 module.exports.generate = element => function* () {
   for (const type of element.names()) {
     for (const note of notes()) {
@@ -35,5 +27,3 @@ module.exports.generate = element => function* () {
     }
   }
 }
-
-// TODO: stream
