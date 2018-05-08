@@ -1,6 +1,7 @@
-const { every } = require('./list')
+const { every, generate } = require('./list')
 
 module.exports.query = element => ({
   all : ()    => every(element),
-  by  : (k,v) => every(element).filter(elem => elem[k] === v)
+  by  : (k,v) => every(element).filter(elem => elem[k] === v),
+  gen : generate(element)
 })
