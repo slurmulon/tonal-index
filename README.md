@@ -65,15 +65,15 @@ const majScales  = scales.by('type', 'major')
 const min7Chords = chords.by('type', 'm7')
 ```
 
-### `gen`
+### `each`
 
 - **Types**: `scales`, `chords`
-- **Returns**: Every possible combination of `scales`, or `chords` one element at a time (generator)
+- **Returns**: Each combination of `scales`, or `chords`, one element at a time (generator)
 
 ```js
 const { scales } = require('tonal-index')
 
-const generate = scales.gen()
+const generate = scales.each()
 
 generate.next()
 ```
