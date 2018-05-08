@@ -1,5 +1,5 @@
 module.exports = function (elem) {
-  const { all, gen } = require(`../src/${elem}`)
+  const { all, each } = require(`../src/${elem}`)
   const fixture = require(`./fixtures/${elem}`)
   const equal = require('deep-equal')
   const test = require('tape')
@@ -12,8 +12,8 @@ module.exports = function (elem) {
     t.end()
   })
 
-  test('gen', t => {
-    const generator = gen()
+  test('each', t => {
+    const generator = each()
     const results = fixture.map(() => generator.next().value)
 
     t.true(equal(results, fixture))
