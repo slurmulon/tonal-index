@@ -1,5 +1,4 @@
 const notes   = require('./notes').all
-const flatten = require('flatten')
 const memoize = require('memoizee')
 
 // pre-warmed / pre-memoized

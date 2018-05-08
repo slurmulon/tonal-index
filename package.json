@@ -7,7 +7,6 @@
     "test": "node test/index.js"
   },
   "dependencies": {
-    "flatten": "^1.0.2",
     "memoizee": "^0.4.12",
     "tonal": "^1.1.3"
   },
