@@ -50,19 +50,32 @@ chords.all() // 1853 results
 
 ### `by`
 
+Queries `scale` or `chord` collections by either `type` or `root`.
+
 - **Types**: `scales`, `chords`
 - **Params**:
-  * `key` (`string`): Either `'type'` or `'root'` (i.e. the root `note` of the `scale` or `chord`)
-  * `value` (`string)`: The value to compare all other values against
+  * `key`: Either `'type'` or `'root'` (i.e. the root `note` of the `scale` or `chord`)
+  * `value`: The value to compare all other values against
 - **Returns**: Entire collection filtered by entries matching a `key` and `value`
 
 ```js
 const { scales, chords } = require('tonal-index')
 
-const majors = scales.by('type', 'major')
+const majScales  = scales.by('type', 'major')
+const min7Chords = chords.by('type', 'm7')
+```
 
-const min7 = chords.by('type', 'm7')
+### `gen`
 
+- **Types**: `scales`, `chords`
+- **Returns**: Every possible combination of `scales`, or `chords` one element at a time (generator)
+
+```js
+const { scales } = require('tonal-index')
+
+const generate = scales.gen()
+
+generate.next()
 ```
 
 ### Output
