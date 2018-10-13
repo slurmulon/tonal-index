@@ -12,7 +12,7 @@ If you have ever needed to iterate through every possible note, scale, or chord 
 
 Because `tonal-index` generates relatively large sets of data it may be loaded in either warm or lazy mode.
 
-- **Warm**: Pre-generates and caches all of the possible combinations
+- **Warm**: Pre-generates and caches all of the possible collection values
 - **Lazy**: Defers generation until the collections are actually needed (default)
 
 ## Install
