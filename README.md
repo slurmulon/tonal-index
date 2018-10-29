@@ -86,22 +86,22 @@ You can find the full list of chords and scales in [`test/fixtures/*`](https://g
 
 ### `note`
 - Type: `string`
-- Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
+- Format: [Scientific pitch notation](https://en.wikipedia.org/wiki/Scientific_pitch_notation)
 
 ### `scale` and `chord`
 - Type: `object`
 - Properties:
   - `type`:
     - Type: `string`
-    - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
+    - Format: [Scientific pitch notation](https://en.wikipedia.org/wiki/Scientific_pitch_notation)
     - Examples: `"+add#9"`, `"m7"`, `"major"`
   - `root`:
     - Type: `string`
-    - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
+    - Format: [Scientific pitch notation](https://en.wikipedia.org/wiki/Scientific_pitch_notation)
     - Example: `"C"`
   - `notes`:
     - Type: `Array<string>`
-    - Format: [Scientific notation](https://en.wikipedia.org/wiki/Scientific_notation)
+    - Format: [Scientific pitch notation](https://en.wikipedia.org/wiki/Scientific_pitch_notation)
     - Example: `["C", "E", "G#", "D#"]`
 
 
@@ -112,7 +112,6 @@ You can find the full list of chords and scales in [`test/fixtures/*`](https://g
 - [ ] Configurable octaves
 - [ ] Chord voicings
 - [ ] Chord inversions
-- [ ] Streamed collection
 - [x] Generator collection
 
 ## License
